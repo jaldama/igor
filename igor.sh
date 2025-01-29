@@ -15,7 +15,7 @@ read_config() {
             value=$(echo "$value" | xargs)
             export "$key"="$value"
         fi
-    done < "$CONFIG_FILE"
+    done < "$HOME/$CONFIG_FILE"
 }
 
 # Function one: Extend reservation
